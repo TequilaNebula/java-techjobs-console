@@ -55,7 +55,7 @@ public class TechJobs {
             } else { // choice is "search"
 
                 // How does the user want to search (e.g. by skill or employer)
-                String searchField = getUserSelection("Search by:", columnChoices).toLowerCase();
+                String searchField = getUserSelection("Search by:", columnChoices);
 
                 // What is their search term?
                 System.out.println("\nSearch term:");
@@ -64,7 +64,7 @@ public class TechJobs {
                 if (searchField.equals("all")) {
                     printJobs(JobData.findByValue(searchTerm));
                 } else {
-                    printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
+                    printJobs(JobData.findByColumnAndValue(searchField, searchTerm.toLowerCase()));
                 }
             }
         }
