@@ -99,7 +99,7 @@ public class JobData {
         loadData();
 
         // TODO - implement this method
-        ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
+
         return null;
     }
 
