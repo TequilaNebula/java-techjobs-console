@@ -100,18 +100,20 @@ public class JobData {
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
-        for (HashMap<String, String> i : allJobs) {
+        for (HashMap<String, String> column : allJobs) {
 
-            String aValue = i.get(value);
+            String aValue = column.get(value);
 
             if (aValue.contains(value)) {
-                jobs.add(i);
+                jobs.add(column);
             }
+
+            return jobs;
         }
 
         // TODO - implement this method
 
-        return jobs;
+        return null;
     }
 
     /**
