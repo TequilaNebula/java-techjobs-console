@@ -100,19 +100,16 @@ public class JobData {
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
-        for (HashMap<String, String> row : allJobs) {
+        for (HashMap<String, String> column : allJobs) {
 
-            String aValue = row.get(value);
+            String aValue = column.get(value);
 
-            if (aValue.contains(value)) {
-                jobs.add(row);
-            }
-            return jobs;
         }
+        return jobs;
 
         // TODO - implement this method
 
-        return null;
+        //return null;
     }
 
     /**
