@@ -107,11 +107,12 @@ public class JobData {
             if (aValue.contains(value)) {
                 jobs.add(column);
             }
+            return jobs;
         }
 
         // TODO - implement this method
 
-        return null;
+        //return null;
     }
 
     /**
